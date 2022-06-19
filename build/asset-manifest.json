@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1f74a8a2.css",
+    "main.js": "/static/js/main.8b967891.js",
+    "static/js/787.eeea5904.chunk.js": "/static/js/787.eeea5904.chunk.js",
+    "static/media/yarmak1.jpg": "/static/media/yarmak1.9a095d6934fdc692e167.jpg",
+    "static/media/Divora.jpg": "/static/media/Divora.1bce924338e9876b8f92.jpg",
+    "static/media/scorpion1.jpg": "/static/media/scorpion1.b0373821d0f4deb1cd58.jpg",
+    "static/media/reptile1.jpg": "/static/media/reptile1.351245bca84b8b83c670.jpg",
+    "static/media/subzero1.jpg": "/static/media/subzero1.546b3b0ea60877e60d28.jpg",
+    "static/media/sirax1.jpg": "/static/media/sirax1.44e4f196b085c4114a53.jpg",
+    "static/media/sonya1.jpg": "/static/media/sonya1.422bf6d5ab518addce6a.jpg",
+    "static/media/kenshi1.jpg": "/static/media/kenshi1.364a700e53a353af8042.jpg",
+    "static/media/Cassie.jpg": "/static/media/Cassie.254bafed367a87c645a0.jpg",
+    "static/media/tanya1.jpg": "/static/media/tanya1.90997119f606b45fae0c.jpg",
+    "static/media/jonny1.jpg": "/static/media/jonny1.aeecfdde9530cecd9766.jpg",
+    "static/media/lukan1.jpg": "/static/media/lukan1.026808f634449234e585.jpg",
+    "static/media/Jax.jpg": "/static/media/Jax.ad0a1443c4b7f718b61b.jpg",
+    "static/media/kitana1.jpg": "/static/media/kitana1.4e7ad5c7d651be818a78.jpg",
+    "static/media/kunlao1.jpg": "/static/media/kunlao1.35277be549fb080a9a12.jpg",
+    "index.html": "/index.html",
+    "main.1f74a8a2.css.map": "/static/css/main.1f74a8a2.css.map",
+    "main.8b967891.js.map": "/static/js/main.8b967891.js.map",
+    "787.eeea5904.chunk.js.map": "/static/js/787.eeea5904.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f74a8a2.css",
+    "static/js/main.8b967891.js"
+  ]
+}

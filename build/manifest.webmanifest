@@ -1,7 +1,6 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
-  "description": "React App with a2hs",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,7 +19,7 @@
     }
   ],
   "start_url": "./index.html",
-  "display": "browser",
+  "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }

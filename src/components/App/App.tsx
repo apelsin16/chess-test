@@ -101,8 +101,6 @@ const App = () => {
         [prompt]
     );
 
-    const hide = () => setVisibleState(false);
-
     const onChooseFighter = (e: React.KeyboardEvent<HTMLDivElement>) => {
         if (!loading) {
             switch (e.keyCode) {
@@ -159,7 +157,7 @@ const App = () => {
 					fighter2={fightersArray[4]}
                     />}
             {fight && <Fight />}
-            {isVisible && <button onClick={promptToInstall}>Add to homescreen</button> }
+            <button onClick={promptToInstall}>Add to home screen</button>
         </div>
     );
 }

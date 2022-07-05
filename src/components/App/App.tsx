@@ -3,6 +3,7 @@ import './App.css';
 import FirstScreen from "../FirstScreen/FirstScreen";
 import SecondScreen from "../SecondScreen/SecondScreen";
 import Fight from "../Fight/Fight";
+import { useAddToHomescreenPrompt } from "../useAdd2HomescreenPrompt";
 import cassieImg from "../../assets/Cassie.jpg";
 import divoraImg from "../../assets/Divora.jpg";
 import jaxImg from "../../assets/Jax.jpg";
@@ -88,6 +89,8 @@ const App = () => {
     const [loading, setLoading] = useState(false);
     const [fight, setFight] = useState(false);
     const [player1, setPlayer1] = useState(0);
+    const [isVisible, setVisibleState] = React.useState(false);
+    const [prompt, promptToInstall] = useAddToHomescreenPrompt();
 
     const onChooseFighter = (e: React.KeyboardEvent<HTMLDivElement>) => {
         if (!loading) {
@@ -145,6 +148,7 @@ const App = () => {
 					fighter2={fightersArray[4]}
                     />}
             {fight && <Fight />}
+            {isVisible && <button onClick={promptToInstall}>Add to homescreen</button> }
         </div>
     );
 }

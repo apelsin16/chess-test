@@ -92,6 +92,17 @@ const App = () => {
     const [isVisible, setVisibleState] = React.useState(false);
     const [prompt, promptToInstall] = useAddToHomescreenPrompt();
 
+    React.useEffect(
+        () => {
+            if (prompt) {
+                setVisibleState(true);
+            }
+        },
+        [prompt]
+    );
+
+    const hide = () => setVisibleState(false);
+
     const onChooseFighter = (e: React.KeyboardEvent<HTMLDivElement>) => {
         if (!loading) {
             switch (e.keyCode) {

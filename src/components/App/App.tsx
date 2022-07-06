@@ -3,7 +3,6 @@ import './App.css';
 import FirstScreen from "../FirstScreen/FirstScreen";
 import SecondScreen from "../SecondScreen/SecondScreen";
 import Fight from "../Fight/Fight";
-import { useAddToHomescreenPrompt } from "../useAdd2HomescreenPrompt";
 import cassieImg from "../../assets/Cassie.jpg";
 import divoraImg from "../../assets/Divora.jpg";
 import jaxImg from "../../assets/Jax.jpg";
@@ -19,6 +18,7 @@ import sonyaImg from "../../assets/sonya1.jpg";
 import subzeroImg from "../../assets/subzero1.jpg";
 import tanyaImg from "../../assets/tanya1.jpg";
 import yarmakImg from "../../assets/yarmak1.jpg";
+import {useAddToHomescreenPrompt} from "../useAddToHomescreenPrompt";
 
 const fightersArray = [
     {
@@ -89,13 +89,12 @@ const App = () => {
     const [loading, setLoading] = useState(false);
     const [fight, setFight] = useState(false);
     const [player1, setPlayer1] = useState(0);
-    const [isVisible, setVisibleState] = React.useState(false);
     const [prompt, promptToInstall] = useAddToHomescreenPrompt();
 
     React.useEffect(
         () => {
             if (prompt) {
-                setVisibleState(true);
+                console.log(prompt);
             }
         },
         [prompt]
@@ -157,7 +156,7 @@ const App = () => {
 					fighter2={fightersArray[4]}
                     />}
             {fight && <Fight />}
-            <button onClick={promptToInstall}>Add to home screen</button>
+            <button onClick={promptToInstall}>Add to homescreen</button>
         </div>
     );
 }
